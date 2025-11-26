@@ -23,7 +23,7 @@ import {
   Star,
   ArrowRight
 } from 'lucide-react'
-import buySphereLogo from './assets/buysphere_logo.png'
+import buySphereLogo from './assets/buysphere_logo.png?format=webp&quality=70&width=512'
 import './App.css'
 
 function App() {

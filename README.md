@@ -27,6 +27,11 @@ npm run dev
 
 ### 📦 Deploy para Produção (Web)
 
+### URL em Produção (GitHub Pages)
+- Publicação automática via GitHub Actions
+- Acesse: https://jessedelima.github.io/buysphere/
+
+
 #### Opção 1: Build Estático
 ```bash
 # Gerar build de produção
@@ -188,12 +193,13 @@ class BuySphereColors {
 
 ## 🛠️ Tecnologias Utilizadas (Versão Web)
 
-- **React 18** - Biblioteca para interfaces de usuário
+- **React** - Biblioteca para interfaces de usuário
 - **Vite** - Build tool moderna e rápida
 - **Tailwind CSS** - Framework CSS utilitário
 - **Lucide React** - Ícones modernos
 - **ESLint** - Linting de código
 - **PostCSS** - Processamento de CSS
+ - **vite-imagetools** - Otimização de imagens (gera WebP leve no build)
 
 ## 📋 Próximos Passos
 
