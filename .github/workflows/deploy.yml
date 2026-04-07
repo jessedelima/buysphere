@@ -30,7 +30,7 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
       - name: Build
-        run: npx vite build --base=./
+        run: node node_modules/vite/bin/vite.js build --base=./
         env:
           CI: true
       - name: Upload artifact
