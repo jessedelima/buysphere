@@ -6,8 +6,8 @@ import path from 'path'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  // Necessário para GitHub Pages: define a base do projeto
-  base: '/buysphere/',
+  // Usando base relativa para maior compatibilidade com GitHub Pages
+  base: './',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
