@@ -21,7 +21,10 @@ import {
   MapPin,
   Download,
   Star,
-  ArrowRight
+  ArrowRight,
+  Cloud,
+  Coins,
+  CarFront
 } from 'lucide-react'
 import buySphereLogo from './assets/buysphere_logo.png'
 import './App.css'
@@ -149,6 +152,30 @@ function App() {
       icon: MessageCircle,
       color: 'bg-lime-500',
       features: ['Mensagens de Texto', 'Áudio e Vídeo', 'Grupos', 'Status']
+    },
+    {
+      id: 'buycloud',
+      name: 'BuyCloud',
+      description: 'Serviço de banco de dados em nuvem líder de mercado',
+      icon: Cloud,
+      color: 'bg-sky-600',
+      features: ['Backup Automático', 'Serviços Escalonados', 'Baixa Latência', 'Menor Custo']
+    },
+    {
+      id: 'buycoin',
+      name: 'BuyCoin',
+      description: 'Nossa moeda virtual exclusiva para todo o ecossistema',
+      icon: Coins,
+      color: 'bg-amber-500',
+      features: ['Pagamentos no Banco', 'Uso em Todos os Apps', 'Vantagens Exclusivas', 'Moeda Digital']
+    },
+    {
+      id: 'buycar',
+      name: 'BuyCar',
+      description: 'Primeiro carro autônomo brasileiro, elétrico e solar',
+      icon: CarFront,
+      color: 'bg-zinc-800',
+      features: ['Condução Autônoma', 'Totalmente Elétrico', 'Placa Solar no Teto', 'Marca Própria']
     }
   ]
 
@@ -183,7 +210,7 @@ function App() {
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
             O BuySphere é o superapp que revoluciona sua experiência digital. 
-            Acesse 15 aplicativos integrados com uma única conta e desfrute de 
+            Acesse 18 aplicativos integrados com uma única conta e desfrute de 
             funcionalidades exclusivas e preços especiais.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
