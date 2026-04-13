@@ -26,8 +26,7 @@ jobs:
 
       - name: Build
         run: |
-          chmod +x node_modules/.bin/vite
-          npm run build
+          node node_modules/vite/bin/vite.js build --base=/buysphere/
         env:
           CI: true
 
