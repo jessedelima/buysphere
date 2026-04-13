@@ -23,7 +23,7 @@ jobs:
 
       - name: Build
         run: |
-          node node_modules/vite/bin/vite.js build
+          node node_modules/vite/bin/vite.js build --base=/buysphere/
         env:
           CI: true
 
