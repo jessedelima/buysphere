@@ -5,6 +5,9 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -23,7 +26,8 @@ jobs:
 
       - name: Build
         run: |
-          node node_modules/vite/bin/vite.js build --base=/buysphere/
+          chmod +x node_modules/.bin/vite
+          npm run build
         env:
           CI: true
 
