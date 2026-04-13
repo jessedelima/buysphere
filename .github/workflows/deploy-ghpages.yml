@@ -22,7 +22,9 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Build
-        run: npm run build
+        run: |
+          chmod +x node_modules/.bin/vite
+          npm run build
         env:
           CI: true
 
