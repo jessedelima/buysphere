@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../models/app_model.dart';
-import '../utils/app_data.dart';
-import '../utils/colors.dart';
-import '../widgets/app_card.dart';
+import 'app_model.dart';
+import 'app_data.dart';
+import 'colors.dart';
+import 'app_card.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

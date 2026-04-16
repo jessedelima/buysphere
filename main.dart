@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'screens/home_screen.dart';
-import 'screens/apps/buy_connect_screen.dart';
-import 'screens/apps/buy_drive_screen.dart';
-import 'screens/apps/buy_bank_screen.dart';
-import 'utils/colors.dart';
+import 'home_screen.dart';
+import 'buy_connect_screen.dart';
+import 'buy_drive_screen.dart';
+import 'buy_bank_screen.dart';
+import 'colors.dart';
 
 void main() {
   runApp(const BuySphereApp());

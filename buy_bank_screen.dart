@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../utils/colors.dart';
+import 'colors.dart';
 
 class BuyBankScreen extends StatelessWidget {
   const BuyBankScreen({super.key});

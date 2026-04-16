@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/app_model.dart';
+import 'app_model.dart';
 import 'colors.dart';
 
 class AppData {
