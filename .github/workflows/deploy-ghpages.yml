@@ -18,16 +18,14 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
           cache: 'npm'
 
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
       - name: Build
-        run: |
-          chmod +x node_modules/.bin/vite
-          npm run build
+        run: npm run build
         env:
           CI: true
 
@@ -37,4 +35,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           keep_files: false
-          # force_orphan: true  # uncomment if you need a clean history on gh-pages
