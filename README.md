@@ -1,6 +1,24 @@
 # BuySphere - Superapp da BuyCorp
 
-Este projeto contém tanto a versão móvel (Flutter) quanto a versão web (React + Vite) do superapp BuySphere da BuyCorp.
+![Version](https://img.shields.io/badge/Version-0.1.0--pilot-blue)
+![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Flutter](https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter)
+![React](https://img.shields.io/badge/React-18.x-blue?logo=react)
+
+**BuySphere** é um superapp inovador da BuyCorp que integra 15 serviços em uma única plataforma. Este repositório contém tanto a versão móvel (Flutter) quanto a versão web (React + Vite).
+
+> ⚠️ **Status**: Este é um projeto **piloto em desenvolvimento**. As funcionalidades estão sendo implementadas incrementalmente.
+
+## 📋 Conteúdo
+- [Visão Geral](#-visão-geral)
+- [Versão Web](#-versão-web-implementada)
+- [Versão Mobile](#-versão-mobile-flutter)
+- [Funcionalidades](#funcionalidades-principais)
+- [Setup](#how-to-run)
+- [Troubleshooting](#-troubleshooting)
+- [Roadmap](#-roadmap)
+- [Licença](#licença)
 
 ## 🌐 Versão Web (Implementada)
 
@@ -199,36 +217,101 @@ class BuySphereColors {
 - **Lucide React** - Ícones modernos
 - **ESLint** - Linting de código
 - **PostCSS** - Processamento de CSS
- - **vite-imagetools** - Otimização de imagens (gera WebP leve no build)
+- **vite-imagetools** - Otimização de imagens
 
-## 📋 Próximos Passos
+---
 
-### Para a Versão Web:
-1. ✅ Interface principal implementada
-2. ✅ Logo integrado e responsivo
-3. 🔄 Implementar funcionalidades específicas de cada app
-4. 🔄 Integrar com APIs backend
-5. 🔄 Adicionar autenticação de usuários
-6. 🔄 Implementar sistema de notificações
-7. 🔄 Testes automatizados
-8. 🔄 Deploy para produção
+## 🚨 Troubleshooting
 
-### Para a Versão Mobile (Flutter):
-1. Configurar o ambiente Flutter no Windows
-2. Criar a estrutura básica do projeto
-3. Implementar a tela principal com grid de apps
-4. Desenvolver as telas individuais de cada app
-5. Integrar com APIs backend (Java)
-6. Testes em dispositivos reais
-7. Build para produção
+### Flutter
+| Problema | Solução |
+|----------|---------|
+| `flutter doctor` mostra erros | Execute `flutter doctor --verbose` para diagnóstico completo |
+| Emulador não conecta | Reinicie o emulador ou execute `flutter clean` |
+| Build falha no Android | Execute: `flutter clean` e `gradle clean` |
+| Erro de PATH do Flutter | Reinicie o terminal após adicionar ao PATH |
+| Erro de assinatura no APK | Verifique `signingConfigs` em `android/app/build.gradle` |
 
-## 🚀 Status do Projeto
+### React/Web
+| Problema | Solução |
+|----------|---------|
+| Porta 5173 já em uso | Execute `npm run dev -- --port 3000` |
+| Módulos não encontrados | Execute `npm install` e `npm cache clean --force` |
+| Build lento | Use `npm run build` com produção ativa |
+| Erro de importação CSS | Verifique imports em `src/main.jsx` |
 
-- **Versão Web**: ✅ MVP Implementado - Pronto para produção
-- **Versão Mobile**: 🔄 Em desenvolvimento
-- **Backend**: 🔄 Em desenvolvimento
+### Geral
+| Problema | Solução |
+|----------|---------|
+| Git com muitos conflitos | Execute `git reset --hard HEAD` (cuidado!) |
+| Node/npm versão incompatível | Use Node 16+ e npm 8+ (verifique com `node -v`) |
 
-## 📞 Suporte
+---
+
+## 🚀 Roadmap
+
+### ✅ Concluído (Versão 0.1 - Piloto)
+- [x] Interface web principal com React
+- [x] Grid de 15 aplicativos
+- [x] Design responsivo
+- [x] Estrutura Flutter base
+- [x] Documentação completa
+
+### 🔄 Versão 0.2 (Próximo - 1-2 meses)
+- [ ] Autenticação com OAuth2/JWT
+- [ ] Dashboard de usuário funcional
+- [ ] API backend (Node.js ou Java)
+- [ ] Banco de dados (PostgreSQL/MongoDB)
+- [ ] Testes unitários (Jest/Vitest)
+
+### 📅 Versão 0.3 (2-3 meses)
+- [ ] BuyBank - Sistema de pagamentos
+- [ ] BuyMessage - Chat em tempo real
+- [ ] BuyDrive - Integração com Mapas
+- [ ] BuyFood - Integração com restaurantes
+- [ ] Notificações push
+
+### 🎯 Versão 1.0 (Beta Aberto - 4-6 meses)
+- [ ] Todos os 15 apps funcionais e testados
+- [ ] Testes de segurança e penetration testing
+- [ ] Deploy em produção (AWS/Azure)
+- [ ] App iOS compilado (macOS necessário)
+- [ ] Analytics e monitoramento
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença **MIT**. Para detalhes, consulte o arquivo [LICENSE](LICENSE).
+
+---
+
+## 👥 Contribuindo
+
+Contribuições são bem-vindas! Para contribuir:
+
+1. Faça um fork do repositório
+2. Crie uma branch para sua feature: `git checkout -b feature/MinhaFeature`
+3. Commit suas mudanças: `git commit -m 'Adiciona MinhaFeature'`
+4. Push para a branch: `git push origin feature/MinhaFeature`
+5. Abra um Pull Request
+
+Veja [CONTRIBUTING.md](CONTRIBUTING.md) para detalhes.
+
+---
+
+## 📞 Contato e Suporte
+
+- **Desenvolvedor Principal**: Jesse de Lima
+- **Email**: [seu-email@example.com]
+- **GitHub Issues**: [Reporte bugs](https://github.com/jessedelima/buysphere/issues)
+- **Discussões**: [Faça perguntas](https://github.com/jessedelima/buysphere/discussions)
+- **Documentação**: Veja [Documentação Completa - Projeto BuySphere.md](Documentação%20Completa%20-%20Projeto%20BuySphere.md)
+
+---
+
+**Última atualização**: Abril de 2026
+**Versão**: 0.1.0-pilot
 
 Para dúvidas sobre o desenvolvimento, consulte a documentação técnica ou entre em contato com a equipe de desenvolvimento da BuyCorp.
 
