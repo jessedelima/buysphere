@@ -1,24 +1,85 @@
-# BuySphere - Superapp da BuyCorp
+# BuySphere — O Super App do Brasil
 
-![Version](https://img.shields.io/badge/Version-0.1.0--pilot-blue)
-![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
+![Version](https://img.shields.io/badge/Versão-0.1.0--pilot-0056B3)
+![Status](https://img.shields.io/badge/Status-MVP_Online-28A745)
+![Stack](https://img.shields.io/badge/Stack-React_%2B_Flutter-FFC107)
 ![License](https://img.shields.io/badge/License-MIT-green)
-![Flutter](https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter)
-![React](https://img.shields.io/badge/React-18.x-blue?logo=react)
 
-**BuySphere** é um superapp inovador da BuyCorp que integra 15 serviços em uma única plataforma. Este repositório contém tanto a versão móvel (Flutter) quanto a versão web (React + Vite).
+### 15 serviços. 1 login. 0 dor de cabeça.
 
-> ⚠️ **Status**: Este é um projeto **piloto em desenvolvimento**. As funcionalidades estão sendo implementadas incrementalmente.
+**Tese**: Brasileiro médio usa 4 apps todo dia: banco, comida, transporte e chat. BuySphere junta esses 4 + 11 serviços em 1 app.
 
-## 📋 Conteúdo
-- [Visão Geral](#-visão-geral)
-- [Versão Web](#-versão-web-implementada)
-- [Versão Mobile](#-versão-mobile-flutter)
-- [Funcionalidades](#funcionalidades-principais)
-- [Setup](#how-to-run)
-- [Troubleshooting](#-troubleshooting)
+**Por que agora**: PIX movimentou R$ 24 TRI em 2025. Open Finance liberou os dados. 88% dos brasileiros têm smartphone. A janela do Super App BR abriu e fecha em 24 meses.
+
+> 🚀 **[Testar Demo Online](https://jessedelima.github.io/buysphere/)** | 📱 [Código Mobile](/lib) | 📝 [Documentação Completa](Documentação%20Completa%20-%20Projeto%20BuySphere.md)
+
+---
+
+## 📱 O que é o BuySphere
+
+Um login. Um saldo PIX. 15 verticais integradas:
+
+| Categoria | Apps |
+|-----------|------|
+| **Fintech + Mobilidade** | BuyBank, BuyDrive, BuyTravel |
+| **Lifestyle** | BuyFood, BuyFarma, BuyShop, BuyMessage |
+| **Conteúdo** | BuyMusic, BuyVideo, BuyGame, BuyCity |
+| **Social + Carreira** | BuyConnect, BuyCourse, BuyUniversit |
+| **Logística** | BuyExpress |
+
+**Diferencial**: Usuário não troca de app, troca de aba. Saldo do BuyBank paga corrida, comida, curso e remédio sem fricção.
+
+---
+
+## 📋 Índice Rápido
+
+- [Demo & Código](#-demo--código)
+- [Stack Técnica](#-stack-técnica)
+- [Setup Desenvolvimento](#-setup-desenvolvimento)
 - [Roadmap](#-roadmap)
-- [Licença](#licença)
+- [Arquitetura](#-arquitetura)
+- [Troubleshooting](#-troubleshooting)
+- [Contribuindo](#-contribuindo)
+
+## 🚀 Demo & Código
+
+| Plataforma | Status | Acesso |
+|-----------|--------|---------|
+| **Web** | ✅ Online | [jessedelima.github.io/buysphere](https://jessedelima.github.io/buysphere/) |
+| **Mobile Flutter** | 🔄 Desenvolvimento | `/lib` neste repo |
+| **Backend API** | 🔄 Em progresso | Roadmap abaixo |
+
+---
+
+## 🛠️ Stack Técnica
+
+**Frontend Web**:
+- React 18.x + Vite (build tool)
+- Tailwind CSS (styling)
+- Lucide React (icons)
+- ESLint + Prettier (code quality)
+
+**Mobile**:
+- Flutter 3.x (cross-platform)
+- Provider (state management)
+- Google Maps Flutter (maps)
+- Dio (HTTP client)
+
+**Backend (Roadmap)**:
+- Node.js + Express
+- PostgreSQL
+- Redis (cache)
+- JWT (auth)
+
+**DevOps**:
+- GitHub Pages (deploy web)
+- GitHub Actions (CI/CD)
+- Docker (containers)
+- AWS (target scaling)
+
+**Decisão Técnica**: Flutter + React permite 1 time dominar Web, Android e iOS. Velocidade prioridade no estágio pilot.
+
+---
 
 ## 🌐 Versão Web (Implementada)
 
@@ -31,23 +92,6 @@ A versão web foi desenvolvida com React, Vite e Tailwind CSS, oferecendo uma ex
 - Navegação entre diferentes seções
 - Cards interativos para cada aplicativo
 - Tema consistente com as cores da marca
-
-### 🚀 Como Executar a Versão Web
-```bash
-# Instalar dependências
-npm install
-
-# Executar em desenvolvimento
-npm run dev
-
-# Acessar em: http://localhost:5173/
-```
-
-### 📦 Deploy para Produção (Web)
-
-### URL em Produção (GitHub Pages)
-- Publicação automática via GitHub Actions
-- Acesse: https://jessedelima.github.io/buysphere/
 
 
 #### Opção 1: Build Estático
