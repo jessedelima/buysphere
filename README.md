@@ -347,7 +347,7 @@ Veja [CONTRIBUTING.md](CONTRIBUTING.md) para detalhes.
 ## 📞 Contato e Suporte
 
 - **Desenvolvedor Principal**: Jesse de Lima
-- **Email**: [seu-email@example.com]
+- **Email**: jessedelima@hoymail.com
 - **GitHub Issues**: [Reporte bugs](https://github.com/jessedelima/buysphere/issues)
 - **Discussões**: [Faça perguntas](https://github.com/jessedelima/buysphere/discussions)
 - **Documentação**: Veja [Documentação Completa - Projeto BuySphere.md](Documentação%20Completa%20-%20Projeto%20BuySphere.md)
